@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1024px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            margin: 30px 0;
+        }
+
+        .menu > .menu_sub {
+            display: flex;
+        }
+
+        .menu > .menu_sub > h2, .menu > .menu_sub > div  {
+            width: 50%;
+        }
+
+        .menu > .menu_sub > div {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .new {
+            display: flex;
+        }
+
+        .new > .new_sub {
+            margin: 0 5px;
+            width: 331.33px; /* (1024px - 30px(margin)) / 3(div 갯수) */
+        }
+
+        .new > .new_sub .toon_img1 {
+            background: url('./images/webtoon1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color:#000;
+            background-position: center;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .new > .new_sub .toon_img2 {
+            background: url('./images/webtoon2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color:bisque;
+            background-position: center;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .new > .new_sub .toon_img3 {
+            background: url('./images/webtoon3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #810505;
+            background-position: center;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .new > .new_sub .intro {
+            display: block;
+            padding: 1.5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <div class="menu_sub">
+                <h2>이달의 신규 웹툰</h2>
+                <div>
+                    <a href="#">
+                        신작웹툰 더보기
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="new">
+            <li class="new_sub">
+                <div class="toon_img1"></div>
+                <div>
+                    <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
+                    <a href="#" class="intro">작가명/작가명/작가명</a>
+                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                </div>
+            </li>
+
+            <li class="new_sub">
+                <div class="toon_img2"></div>
+                <div>
+                    <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
+                    <a href="#" class="intro">작가명/작가명/작가명</a>
+                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                </div>
+            </li>
+            
+            <li class="new_sub">
+                <div class="toon_img3"></div>
+                <div>
+                    <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
+                    <a href="#" class="intro">작가명/작가명/작가명</a>
+                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

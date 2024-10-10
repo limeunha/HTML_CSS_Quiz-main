@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- css 이용 -->
+    <a href="https://www.google.com" class="button-link">
+        구글로 이동
+    </a>
+
+    <!-- 혹은 자바스크립트 이용 -->
+    <button onclick="location.href='https://www.google.com';">
+        구글로 이동
+    </button>
+
+    <hr>
+
+    <!-- li태그에 넣음 -->
+    <ul>
+        <li>
+            <ul>
+                <li>하위 리스트1</li>
+                <li>하위 리스트2</li>
+            </ul>
+        </li>
+        <li>리스트1</li>
+        <li>리스트2</li>
+    </ul>
+
+    <hr>
+
+    <!-- span태그에 글 작성 후 display를 block으로 변경 -->
+    <span style="display: block;">문장입니다.</span>
+
+    <hr>
+
+    <a href="https://www.google.com">
+        <div>
+            구글로 이동
+        </div>
+    </a>
+
+    <hr>
+
+    아이디: <input type="text">
+</body>
+</html>

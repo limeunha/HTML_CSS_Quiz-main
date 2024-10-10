@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 해상도 1000px~ */
+        @media all and (min-width:1000px) { 
+            .jeju {
+                width: 800px;
+            }
+        }
+
+        /* 해상도 501px ~ 999px */
+        @media all and (min-width:501px) and (max-width:999px) {
+            .jeju {
+                width: 500px;
+            } 
+        }
+
+        /* 해상도 0px ~ 500px */
+        @media all and (max-width:500px) { 
+            .jeju {
+                width: 100%;
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./images/jeju.jpg" alt="제주도" class="jeju">
+</body>
+</html>

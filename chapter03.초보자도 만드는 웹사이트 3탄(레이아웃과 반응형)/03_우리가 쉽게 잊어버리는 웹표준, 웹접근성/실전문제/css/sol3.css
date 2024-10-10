@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1024px;
+
+    /* 수정 */
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 40px 0;
+}
+
+.content {
+    height: 500px;
+}
+
+.content .side {
+    display: inline-block;
+}
+
+.content .side1 {
+    width: 450px;
+}
+
+.content .side2 {
+    width: 550px;
+}
+
+.content .side1 img {
+    width: 100%;
+
+    /* 수정 */
+    height: auto;
+}
+
+@media all and (min-width:668px) and (max-width:1024px) {
+    .wrap {
+        width: 100%;
+    }
+
+    .content .side1 {
+        width: 43.94%;
+    }
+
+    .content .side2 {
+        width: 53.71%;
+    }
+}
+        
+        
+@media all and (max-width:667px) {
+    .wrap {
+        width: 100%;
+    }
+
+    .content .side1 {
+        width: 43.94%;
+    }
+
+    .content .side2 {
+        width: 53.71%;
+    }
+
+    .content .side2 p {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+
+         #wrap {
+            width: 1024px;
+            height: 500px;
+            background: skyblue;
+            margin: 0 auto;
+         }
+
+         #wrap .content1 {
+            width: 420px;
+            height: 100%;
+            background: gold;
+         }
+         @media all and(min-width:1024px) {
+         }
+         @media all and(min-width:768) and (max-width: 1023px) {
+            #wrap {
+               width: 100%;
+            }
+            #wrap .content1 {
+               width: 41.01;
+            }
+         }
+         @media all and(max-width:767px) {
+            #wrap {
+               width: 100%;
+            }
+
+            #wrap .content1 {
+               width: 41.01;
+            }
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <div class="content1"></div>
+      </div>
+   </body>
+</html>

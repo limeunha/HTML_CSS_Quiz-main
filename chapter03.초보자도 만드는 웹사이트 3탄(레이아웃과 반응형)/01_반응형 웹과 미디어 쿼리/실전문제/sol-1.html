@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .child {
+            height: 500px;
+        }
+
+        .content1 {
+            background-color: skyblue;
+        }
+
+        .content1 .side1 {
+            background-color: beige;
+            width: 320px;
+            height: 100%;
+        }
+
+        .content2 {
+            background-color: salmon;
+        }
+
+        .content2 .side2 {
+            background-color:azure;
+            width: 500px;
+            height: 100%;
+        }
+
+        .content3 {
+            background-color: gold;
+        }
+
+        
+        /* 모바일 가로, 모바일 세로 (해상도 0px ~ 1024px)*/
+        @media all and (max-width:1024px) { 
+            .wrap {
+                width: 100%;
+            }
+
+            .content1 .side1 {
+                /* 320px ÷ 1024px */
+                width: 31.25%;
+            }
+
+            .content2 .side2 {
+                /* 500px ÷ 1024px */
+                width: 48.82%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="child content1">
+            <div class="side1"></div>
+        </div>
+        <div class="child content2">
+            <div class="side2"></div>
+        </div>
+        <div class="child content3"></div>
+    </div>
+</body>
+</html>

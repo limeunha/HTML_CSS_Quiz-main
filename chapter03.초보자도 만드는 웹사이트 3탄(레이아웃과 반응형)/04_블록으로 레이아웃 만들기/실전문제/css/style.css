@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* 헤더 */
+
+header {
+    height: 75px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* 메인 */
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-section {
+    margin: 30px 0;
+}
+
+.main__top {
+    height: 260px;
+    background-color: bisque;
+}
+
+.main__sso {
+    height: 60px;
+    background-color: aquamarine;
+}
+
+.main__banner1 {
+    height: 500px;
+    background-color: salmon;
+}
+
+.main__banner2 {
+    height: 260px;
+    background-color: blueviolet;
+}
+
+.main__travel-helper {
+    height: 140px;
+    background-color: gray;
+}
+
+.main__banner3 {
+    height: 190px;
+    background-color: cadetblue;
+}
+
+.main__early-reservation {
+    height: 310px;
+    background-color: burlywood;
+}
+
+.main__more {
+    height: 60px;
+    background-color: yellow;
+}
+
+/* 푸터 */
+
+footer {
+    height: 600px;
+    background-color: aqua;
+}
